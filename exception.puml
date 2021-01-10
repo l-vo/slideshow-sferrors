@@ -1,0 +1,25 @@
+@startuml
+title: Exception workflow (Symfony 3.4)
+
+HttpKernel -> ExceptionListener: kernel.exception event
+ExceptionListener -> Logger: log
+ExceptionListener -> FlattenException: create
+ExceptionListener -> HttpKernel: subrequest
+note left
+Subrequest with
+controller & flatten exception
+as attributes
+end note
+
+HttpKernel -> ExceptionController: call controller showAction
+note left: Handle subrequest
+note right
+Render debug representation
+or customized error page (via twig)
+end note
+ExceptionController -> HttpKernel: response
+note left: Process subrequest response
+HttpKernel -> ExceptionListener: return subrequest response
+ExceptionListener -> HttpKernel: set response to event
+note left: Process main request response
+@enduml
