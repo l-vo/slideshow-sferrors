@@ -136,6 +136,14 @@ Don't do:
 
 ---
 
+# Multiple channels can be used
+
+<img src="img/channels.png" style="margin-top: -90px" width="100%" alt="https://carbon.now.sh/?bg=rgba%28243%2C243%2C243%2C0%29&t=a11y-dark&wt=none&l=yaml&ds=true&dsyoff=10px&dsblur=26px&wc=false&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=monolog%253A%250A%2520%2520channels%253A%2520%255B%27bpm%27%255D%2520%2520%2523%2520%27monolog.logger.bpm%27%2520service%2520created" />  
+<div style="margin-top: -110px; text-align: center">OR</div>
+<img src="img/tag.png" style="margin-top: -110px" width="100%" alt="https://carbon.now.sh/?bg=rgba%28243%2C243%2C243%2C0%29&t=a11y-dark&wt=none&l=yaml&ds=true&dsyoff=10px&dsblur=26px&wc=false&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=services%253A%250A%2520%2520AppBundle%255CClient%255CBPMClient%253A%250A%2520%2520%2520%2520arguments%253A%2520%255B%27%2540logger%27%255D%250A%2520%2520%2520%2520tags%253A%250A%2520%2520%2520%2520%2520%2520-%2520%257B%2520name%253A%2520monolog.logger%252C%2520channel%253A%2520bpm%257D" />
+
+---
+
 # Look at Monolog documentation
 
 <br /><br />
