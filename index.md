@@ -15,6 +15,16 @@ class: impact
 ## In a Symfony application
 
 ---
+<div style="text-align: center">
+<img src="img/me.png" style="width: 25%"/><br />
+<br />
+<strong>Laurent VOULLEMIER</strong>
+<br />
+<br />
+@Sensiolabs<br /><br />
+Team P50/MiddleOffice
+</div>
+---
 
 <img width="100%" src="/img/exception.png" alt="Workflow diagram" />
 
